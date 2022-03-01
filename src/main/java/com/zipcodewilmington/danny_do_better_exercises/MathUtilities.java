@@ -31,9 +31,10 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Short add(short baseValue, short difference) {
-        short addum = (short) (baseValue + difference);
+       /* short addum = (short) (baseValue + difference);
         Short val = new Short(addum);
-        return val;
+        */
+        return (short)(baseValue + difference);
     }
 
     /**
@@ -42,8 +43,9 @@ public class MathUtilities {
      * @return sum of `baseValue` and `difference`
      */
     public Byte add(byte baseValue, byte difference) {
-        byte addum = (byte)(baseValue +difference);
-        return addum;
+       // byte addum = (byte)(baseValue +difference);
+        //return addum;
+        return (byte)(baseValue +difference);
     }
 
     /**
@@ -92,8 +94,9 @@ public class MathUtilities {
      * @return difference between `baseValue` and `difference`
      */
     public Short subtract(short baseValue, short difference) {
-        short val = (short)(baseValue - difference);
-        return val;
+        //short val = (short)(baseValue - difference);
+       // return val;
+        return (short)(baseValue - difference);
     }
 
     /**
@@ -102,8 +105,9 @@ public class MathUtilities {
      * @return difference between `baseValue` and `difference`
      */
     public Byte subtract(byte baseValue, byte difference) {
-        byte val = (byte)(baseValue - difference);
-        return val;
+        //byte val = (byte)(baseValue - difference);
+       // return val;
+        return (byte)(baseValue - difference);
     }
 
     /**
@@ -153,8 +157,9 @@ public class MathUtilities {
      * @return division of `dividend` by `divisor
      */
     public Short divide(short dividend, short divisor) {
-        short val = (short)(dividend / divisor);
-        return val;
+       // short val = (short)(dividend / divisor);
+       // return val;
+        return (short)(dividend / divisor);
     }
 
     /**
@@ -163,8 +168,9 @@ public class MathUtilities {
      * @return division of `dividend` by `divisor
      */
     public Byte divide(byte dividend, byte divisor) {
-        byte val = (byte)(dividend/divisor);
-        return val;
+       // byte val = (byte)(dividend/divisor);
+       // return val;
+        return (byte)(dividend/divisor);
     }
 
     /**
@@ -213,8 +219,9 @@ public class MathUtilities {
      * @return product of `multiplicand` by `multiplier`
      */
     public Short multiply(short multiplicand, short multiplier) {
-        short val = (short)(multiplicand * multiplier);
-        return val;
+        //short val = (short)(multiplicand * multiplier);
+        //return val;
+        return (short)(multiplicand * multiplier);
     }
     /**
      * @param multiplicand value to be multiplied
@@ -222,8 +229,9 @@ public class MathUtilities {
      * @return product of `multiplicand` by `multiplier`
      */
     public Byte multiply(byte multiplicand, byte multiplier) {
-        byte val = (byte)(multiplicand * multiplier);
-        return val;
+        //byte val = (byte)(multiplicand * multiplier);
+        //return val;
+        return (byte)(multiplicand * multiplier);
     }
 
     /**

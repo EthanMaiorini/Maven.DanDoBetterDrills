@@ -39,8 +39,8 @@ public class StringUtilities {
      * @return the first 3 characters of `input`
      */
     public static String getPrefix(String input){
-        String val = input.substring(0,3);
-        return val;
+        //String val = input.substring(0,3);
+        return input.substring(0,3);
     }
 
     /**
@@ -72,8 +72,8 @@ public class StringUtilities {
         if ((val %2) == 0){
             val = val/2 -1;
         }else val = Math.round(val/2);
-
         return inputValue.charAt(val);
+
     }
 
     /**
@@ -81,8 +81,10 @@ public class StringUtilities {
      * @return the first sequence of characters
      */
     public static String getFirstWord(String spaceDelimitedString){
-        int val = spaceDelimitedString.indexOf(" ");
-        return spaceDelimitedString.substring(0,val);
+        //int val = spaceDelimitedString.indexOf(" ");
+        //return spaceDelimitedString.substring(0,val);
+        String[] wordArr = spaceDelimitedString.split(" ");
+        return wordArr[0];
     }
 
     /**
@@ -90,25 +92,31 @@ public class StringUtilities {
      * @return the second word of a string delimited by spaces.
      */
     public static String getSecondWord(String spaceDelimitedString){
-        int val = spaceDelimitedString.indexOf(" ");
+       /* int val = spaceDelimitedString.indexOf(" ");
         int length = spaceDelimitedString.length();
         String result = spaceDelimitedString.substring(val+1,length);
         int val1 = result.indexOf(" ");
         if (val1 == -1) {
             return result;
         }else return result.substring(0,val1);
+        */
+        String[] wordArr = spaceDelimitedString.split(" ");
+        return wordArr[1];
     }
+
 
     /**
      * @param stringToReverse
      * @return an identical string with characters in reverse order.
      */
     public static String reverse(String stringToReverse){
-        int length = stringToReverse.length()-1;
+        /*int length = stringToReverse.length()-1;
         String result = "";
         for(int x =length; x>=0;x--){
            result += stringToReverse.charAt(x);
         }
         return result;
+         */
+        return new StringBuilder(stringToReverse).reverse().toString();
     }
 }
